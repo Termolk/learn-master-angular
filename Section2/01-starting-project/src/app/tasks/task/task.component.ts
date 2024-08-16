@@ -14,7 +14,6 @@ import { TasksService } from '../tasks.service';
 })
 export class TaskComponent {
   @Input({ required: true }) task!: Task;
-  @Output() complete = new EventEmitter<string>();
 
   private tasksService = inject(TasksService);
 
